@@ -1,11 +1,16 @@
 # Ignore everything
 *
-
-# But keep the Vinita folder and this notebook
+# But keep the Vinita folder and its contents
 !Vinita/
-!Vinita/Study1_final.ipynb
-
+!Vinita/**/*
 # Allow Will folder and contents
 !Will/
 !Will/**/*
-!Vinita/annotation_task_pilot.ipynb
+# Keep git files
+!.gitignore
+# But still ignore these specific files even in allowed folders
+.DS_Store
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
